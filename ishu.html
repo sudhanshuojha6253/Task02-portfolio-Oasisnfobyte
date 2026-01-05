@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="ishu.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">My Portfolio</div>
+            <ul class="nav-links">
+                <li><a href="#about">About</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="hero">
+        <div class="hero-content">
+            <h1>Hello, I'm Sudhanshu Ojha</h1>
+            <a href="#">sudhanshuojha6253@gmail.com</a>
+            <p>Web Developer | Designer | Creative Thinker</p>
+            <a href="#contact" class="btn">Get In Touch</a>
+        </div>
+        <div class="hero-image">
+            <img src="images/WhatsApp Image 2025-12-09 at 20.39.36.jpeg" alt="Profile Picture" class="profile-pic">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I'm a passionate web developer with experience in creating responsive and user-friendly websites. I love turning ideas into digital realities.</p>
+    </section>
+
+    <section id="skills">
+        <h2>Skills</h2>
+        <div class="skills-grid">
+            <div class="skill">HTML</div>
+            <div class="skill">CSS</div>
+            <div class="skill">JavaScript</div>
+            <div class="skill">React</div>
+            <div class="skill">Node.js</div>
+            <div class="skill">Git</div>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="projects-grid">
+            <div class="project">
+                <img src="images/Screenshot (23).png" alt="Project 1">
+                <h3>Project 1</h3>
+                <p>Landing page using html and css</p>
+                <a href="https://lnkd.in/gGQtUPC4" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <img src="images/Screenshot (24).png" alt="Project 2">
+                <h3>Project 2</h3>
+                <p>Weather Api</p>
+                <a href="https://sudhanshuojha6253.github.io/wather_API_UI/" class="btn">View Project</a>
+            </div>
+            <div class="project">
+                <img src="images/Screenshot (25).png" alt="Project 3">
+                <h3>Project 3</h3>
+                <p>Apnidukan.</p>
+                <a href="https://sudhanshuojha6253.github.io/Apnidukan/" class="btn">View Project</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact</h2>
+        <form action= "https://script.google.com/macros/s/AKfycbyDjomaqLButI-r3IuDG4bc6Y6RXCw85r8SZVriBteJSZiQbpwwsK5IzC4tx7-0uHpm/exec" method="post" name="contact">
+            <input type="text" name="name" placeholder="Your Name" required>
+            <input type="number" name="phoneNmber" placeholder="enter number" required>
+            <input type="email" name="email" placeholder="Your Email" required>
+            <textarea name="message" placeholder="Your Message" required></textarea>
+            <button type="submit" class="btn">Send Message</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 [Your Name]. All rights reserved.</p>
+    </footer>
+    <!-- <script>
+  const scriptURL = "https://script.google.com/macros/s/AKfycbyDjomaqLButI-r3IuDG4bc6Y6RXCw85r8SZVriBteJSZiQbpwwsK5IzC4tx7-0uHpm/exec";
+  
+  const form = document.forms["contact"];
+
+  form.addEventListener("submit", (e) => {
+    e.preventDefault();
+
+    fetch(scriptURL, {
+      method: "POST",
+      body: new FormData(form)
+    })
+    .then(response => {
+      alert("Your form has been successfully submitted!");
+      form.reset();
+    })
+    .catch(error => {
+      console.error("Error!", error.message);
+      alert("Something went wrong. Please try again.");
+    });
+  });
+</script> -->
+</body>
+</html>
